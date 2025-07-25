@@ -4,7 +4,7 @@ from sklearn.naive_bayes import MultinomialNB
 import joblib
 
 # Load dataset
-df = pd.read_csv("C:\Users\NEHA\Downloads\compressed_data_25mb.csv.gz")
+df = pd.read_csv("compressed_data_25mb.csv.gz")
 df.dropna(subset=["text", "label"], inplace=True)
 df['label'] = df['label'].astype(int)
 
